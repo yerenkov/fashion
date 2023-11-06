@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@400;700&family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+body header {
+  margin-bottom: 5px;
+  background: linear-gradient(270deg, #9559C4 5.32%, #66B0D9 100.04%);
+}
+body header h2 {
+  line-height: 30px;
+  padding: 40px;
+  font-family: "Noto Serif Display", serif;
+  font-size: 40px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+}
+body main .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+body main .cards a {
+  background-size: cover;
+  background-position: top;
+  width: calc(50% - 10px);
+  height: 400px;
+  margin: 5px;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+}
+body main .cards a.year1950 {
+  background-image: url("1950.jpg");
+}
+body main .cards a.year1960 {
+  background-image: url("1960.jpg");
+}
+body main .cards a.year1970 {
+  background-image: url("1970.jpg");
+}
+body main .cards a.year1980 {
+  background-image: url("1980.jpg");
+}
+body main .cards a.year1990 {
+  background-image: url("1990.jpg");
+}
+body main .cards a.year2000 {
+  background-image: url("2000.jpg");
+}
+body main .cards a h3 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  padding: 40px;
+  color: white;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
