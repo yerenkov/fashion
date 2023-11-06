@@ -14,7 +14,6 @@ body header {
   background: linear-gradient(270deg, #9559C4 5.32%, #66B0D9 100.04%);
 }
 body header h2 {
-  line-height: 30px;
   padding: 40px;
   font-family: "Noto Serif Display", serif;
   font-size: 40px;
@@ -58,7 +57,18 @@ body main .cards a h3 {
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 60px;
-  padding: 40px;
+  padding: 40px 0;
   color: white;
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  body header {
+    margin-bottom: 10px;
+  }
+  body main .cards a {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
