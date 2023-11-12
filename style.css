@@ -4,6 +4,15 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 100px;
+  color: #222;
+}
 body .container {
   width: 90%;
   max-width: 1200px;
@@ -11,9 +20,10 @@ body .container {
 }
 body header {
   margin-bottom: 5px;
-  background: linear-gradient(270deg, #9559C4 5.32%, #66B0D9 100.04%);
+  background: #6f966f;
 }
-body header h2 {
+body header a {
+  display: block;
   padding: 40px;
   font-family: "Noto Serif Display", serif;
   font-size: 40px;
@@ -34,6 +44,9 @@ body main .cards a {
   display: flex;
   align-items: flex-end;
   text-decoration: none;
+  transition: 0.6s;
+  filter: brightness(90%);
+  filter: grayscale(100%);
 }
 body main .cards a.year1950 {
   background-image: url("1950.jpg");
@@ -53,13 +66,64 @@ body main .cards a.year1990 {
 body main .cards a.year2000 {
   background-image: url("2000.jpg");
 }
+body main .cards a:hover {
+  filter: brightness(110%);
+  filter: grayscale(0%);
+}
 body main .cards a h3 {
   text-align: center;
-  font-family: "Raleway", sans-serif;
   font-size: 60px;
   padding: 40px 0;
   color: white;
   width: 100%;
+}
+body main .tabs {
+  font-size: 0;
+}
+body main .tabs button {
+  font-size: 16px;
+  padding: 0 15px;
+  cursor: pointer;
+  background: #fff;
+  opacity: 0.5;
+  transition: 0.3s;
+  font-family: "Raleway", sans-serif;
+  border: none;
+  line-height: 40px;
+  color: #222;
+}
+body main .tabs button:hover {
+  opacity: 1;
+}
+body main .tabs button.activeBtn {
+  opacity: 1;
+  background: rgba(111, 150, 111, 0.3333333333);
+}
+body main .tabcontent {
+  display: none;
+}
+body main .tabcontent h3 {
+  margin: 40px 0 10px;
+}
+body main .tabcontent.activeTab {
+  display: block;
+}
+body main .hero {
+  overflow: hidden;
+}
+body main .hero .mainImage {
+  max-width: 400px;
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+body main .hero p {
+  margin: auto;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 600px) {
