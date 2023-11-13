@@ -45,7 +45,6 @@ body main .cards a {
   align-items: flex-end;
   text-decoration: none;
   transition: 0.6s;
-  filter: brightness(90%);
   filter: grayscale(100%);
 }
 body main .cards a.year1950 {
@@ -67,7 +66,6 @@ body main .cards a.year2000 {
   background-image: url("2000.jpg");
 }
 body main .cards a:hover {
-  filter: brightness(110%);
   filter: grayscale(0%);
 }
 body main .cards a h3 {
@@ -134,5 +132,6 @@ body main .hero p {
     width: 100%;
     margin: 0;
     margin-bottom: 10px;
+    filter: grayscale(0%);
   }
 }/*# sourceMappingURL=style.css.map */

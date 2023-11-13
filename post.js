@@ -23,3 +23,4 @@ setInterval(() => {
     counter = (counter + 1) % imgs.length
     document.getElementsByClassName("mainImage")[0].src = imgs[counter]
 }, 5000)
+
