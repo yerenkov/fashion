@@ -29,8 +29,17 @@
                     Кристиан Диор представил невероятно женственные модели с покатой линией плеч, широкими юбками и
                     глубоким декольте. Пышные юбки с корсетами подчеркивали изящность фигуры, делали силуэт утонченным и
                     давали возможность каждой женщине возможность выглядеть шикарно.
-                    <br><br>
-                    1950-е годы - время моды на шубы из натурального меха. Шубка была мечтой каждой женщины, но
+                </p>
+            </div>
+            <div class="tabs">
+                <button onclick="openTab(event, 'winter')" class="activeBtn">Зима</button>
+                <button onclick="openTab(event, 'spring')">Весна</button>
+                <button onclick="openTab(event, 'summer')">Лето</button>
+                <button onclick="openTab(event, 'autumn')">Осень</button>
+            </div>
+            <div id="winter" class="tabcontent activeTab">
+                <h3>Зима</h3>
+                <p>1950-е годы - время моды на шубы из натурального меха. Шубка была мечтой каждой женщины, но
                     осуществить её могли далеко не все. Самыми распространенными являлись шубы из каракуля, белки,
                     кролика, цигейки, а также пальто с воротником из чернобурки, или с воротником и манжетами,
                     отделанными каракулем, либо более дешевыми цигейкой и кроликом. Очень модными были шубки из
@@ -44,42 +53,54 @@
                     В конце 1950-х на улицах крупных городов можно было увидеть дам в замысловатых шляпах, в шляпках с
                     вуалями. В тоже время очень большое количество женщин ходило в платках. Чрезвычайно модной деталью в
                     эти годы являлись декоративные шляпные булавки и брошки.
+                    <br><br>
+                    В зимнем сезоне 1950 года были популярны теплые пальто, шерстяные свитера, уютные вязаные шапки и
+                    варежки, а также длинные шерстяные юбки. Модными были также узкие брюки, высокие сапоги и шерстяные
+                    платья. Также в тренде были яркие цвета и узоры, такие как клетка и полосы.
                 </p>
-            </div>
-            <div class="tabs">
-                <button onclick="openTab(event, 'winter')" class="activeBtn">Зима</button>
-                <button onclick="openTab(event, 'spring')">Весна</button>
-                <button onclick="openTab(event, 'summer')">Лето</button>
-                <button onclick="openTab(event, 'autumn')">Осень</button>
-            </div>
-            <div id="winter" class="tabcontent activeTab">
-                <h3>Зима</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima, voluptate minus eius
-                    eligendi adipisci reprehenderit temporibus tenetur, fuga aspernatur, commodi pariatur dolore
-                    voluptates tempore mollitia quasi asperiores! Corporis, soluta.</p>
             </div>
             <div id="spring" class="tabcontent">
                 <h3>Весна</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima, voluptate minus eius
-                    eligendi adipisci reprehenderit temporibus tenetur, fuga aspernatur, commodi pariatur dolore
-                    voluptates tempore mollitia quasi asperiores! Corporis, soluta.</p>
+                <p>Весной 1950 года в СССР мода также стала более легкой и женственной. Женщины предпочитали носить
+                    платья с узкими талиями и расклешёнными юбками, а также блузки с кружевными вставками. Популярными
+                    были пастельные оттенки и цветочные узоры. В обуви модницы выбирали туфли на невысоком каблуке или
+                    балетки. Однако, из-за дефицита материалов, модницам приходилось обходиться более простыми и
+                    скромными нарядами.</p>
             </div>
             <div id="summer" class="tabcontent">
                 <h3>Лето</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima, voluptate minus eius
-                    eligendi adipisci reprehenderit temporibus tenetur, fuga aspernatur, commodi pariatur dolore
-                    voluptates tempore mollitia quasi asperiores! Corporis, soluta.</p>
+                <p>В моде летом 1950 года в СССР были популярны легкие платья из натуральных тканей, таких как хлопок и
+                    лен. Женщины предпочитали яркие цвета и принты, отражающие радость и оптимизм. Широкие
+                    солнцезащитные шляпы также были в тренде, как модный аксессуар и защита от солнца. Купальники с
+                    высокой талией и декоративными элементами были популярны для отдыха на пляже или у бассейна. В обуви
+                    предпочитали легкие варианты на плоской подошве для комфортного отдыха на природе или прогулок по
+                    городу.</p>
             </div>
             <div id="autumn" class="tabcontent">
                 <h3>Осень</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima, voluptate minus eius
-                    eligendi adipisci reprehenderit temporibus tenetur, fuga aspernatur, commodi pariatur dolore
-                    voluptates tempore mollitia quasi asperiores! Corporis, soluta.</p>
+                <p>Осенью 1950 года в СССР мода менялась в сторону более теплых и уютных нарядов. Женщины предпочитали
+                    платья и костюмы из шерсти или твида, часто с добавлением меховых отделок. Цветовая палитра
+                    становилась более приглушенной, с оттенками коричневого, серого и зеленого. В обуви стали популярны
+                    сапоги и ботильоны на невысоком каблуке, обеспечивающие комфорт и защиту от прохладной погоды.
+                    Аксессуары, такие как шарфы и перчатки, также стали неотъемлемой частью осеннего гардероба.</p>
             </div>
         </div>
 
     </main>
-    <script src="post.js"></script>
+    <script>
+        let counter = 0
+        let imgs = [
+            "1950/2023-11-12 23.30.21.jpg",
+            "1950/2023-11-12 23.30.36.jpg",
+            "1950/2023-11-12 23.30.44.jpg",
+        ]
+        setInterval(() => {
+            counter = (counter + 1) % imgs.length
+            document.getElementsByClassName("mainImage")[0].src = imgs[counter]
+        }, 5000)
+
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

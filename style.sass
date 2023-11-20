@@ -38,6 +38,7 @@ body
                 align-items: flex-end
                 text-decoration: none
                 transition: 0.6s
+                filter: brightness(90%)
                 filter: grayscale(100%)
                 &.year1950
                     background-image: url("1950.jpg")
@@ -50,8 +51,9 @@ body
                 &.year1990
                     background-image: url("1990.jpg")
                 &.year2000
-                    background-image: url("2000.jpg")
+                    background-image: url("2000/0.jpg")
                 &:hover
+                    filter: brightness(110%)
                     filter: grayscale(0%)
                 h3
                     text-align: center
@@ -59,6 +61,7 @@ body
                     padding: 40px 0
                     color: white
                     width: 100%
+                    text-shadow: 0 0 10px #00000022
         .tabs
             font-size: 0
             button
@@ -83,6 +86,11 @@ body
                 margin: 40px 0 10px
             &.activeTab
                 display: block
+            img
+                max-width: 400px
+                display: block
+                margin-top: 10px
+                margin-bottom: 20px
         .hero
             overflow: hidden
             .mainImage
@@ -107,4 +115,3 @@ body
                     width: 100%
                     margin: 0
                     margin-bottom: 10px
-                    filter: grayscale(0%)

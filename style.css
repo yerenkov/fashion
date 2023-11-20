@@ -45,6 +45,7 @@ body main .cards a {
   align-items: flex-end;
   text-decoration: none;
   transition: 0.6s;
+  filter: brightness(90%);
   filter: grayscale(100%);
 }
 body main .cards a.year1950 {
@@ -63,9 +64,10 @@ body main .cards a.year1990 {
   background-image: url("1990.jpg");
 }
 body main .cards a.year2000 {
-  background-image: url("2000.jpg");
+  background-image: url("2000/0.jpg");
 }
 body main .cards a:hover {
+  filter: brightness(110%);
   filter: grayscale(0%);
 }
 body main .cards a h3 {
@@ -74,6 +76,7 @@ body main .cards a h3 {
   padding: 40px 0;
   color: white;
   width: 100%;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1333333333);
 }
 body main .tabs {
   font-size: 0;
@@ -106,6 +109,12 @@ body main .tabcontent h3 {
 body main .tabcontent.activeTab {
   display: block;
 }
+body main .tabcontent img {
+  max-width: 400px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 body main .hero {
   overflow: hidden;
 }
@@ -132,6 +141,5 @@ body main .hero p {
     width: 100%;
     margin: 0;
     margin-bottom: 10px;
-    filter: grayscale(0%);
   }
 }/*# sourceMappingURL=style.css.map */
