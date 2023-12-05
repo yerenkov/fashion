@@ -123,12 +123,10 @@ body main .tabcontent .tabContentImages {
 body main .tabcontent .tabContentImages img {
   display: inline-block;
   margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(111, 150, 111, 0.3333333333);
+  width: calc(100% - 20px);
 }
 body main .tabcontent .tabContentImages img:last-child {
-  max-width: none;
-  width: 50%;
+  max-width: 500px;
 }
 body main .hero .mainImage {
   max-width: 400px;
@@ -140,8 +138,6 @@ body main .hero .mainImage {
   margin: auto;
   margin-top: 35px;
   margin-bottom: 40px;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(111, 150, 111, 0.3333333333);
 }
 body main .hero p {
   margin: auto;
@@ -161,8 +157,6 @@ body main .hero p {
   margin-bottom: 10px;
   max-width: 600px;
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(111, 150, 111, 0.3333333333);
 }
 
 @media (max-width: 600px) {
