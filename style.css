@@ -130,12 +130,10 @@ body main .tabcontent .tabContentImages img:last-child {
   max-width: none;
   width: 50%;
 }
-body main .hero {
-  overflow: hidden;
-}
 body main .hero .mainImage {
   max-width: 400px;
   height: 300px;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   display: block;
