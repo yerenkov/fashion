@@ -80,6 +80,7 @@ body main .cards a h3 {
 }
 body main .tabs {
   font-size: 0;
+  margin-top: 20px;
 }
 body main .tabs button {
   font-size: 16px;
@@ -115,6 +116,20 @@ body main .tabcontent img {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+body main .tabcontent .tabContentImages {
+  font-size: 0;
+  text-align: center;
+}
+body main .tabcontent .tabContentImages img {
+  display: inline-block;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(111, 150, 111, 0.3333333333);
+}
+body main .tabcontent .tabContentImages img:last-child {
+  max-width: none;
+  width: 50%;
+}
 body main .hero {
   overflow: hidden;
 }
@@ -127,10 +142,29 @@ body main .hero .mainImage {
   margin: auto;
   margin-top: 35px;
   margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(111, 150, 111, 0.3333333333);
 }
 body main .hero p {
   margin: auto;
   margin-bottom: 40px;
+}
+
+.floating {
+  float: right;
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+}
+.floating figcaption {
+  color: #777;
+}
+.floating .floatingImg {
+  margin-bottom: 10px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(111, 150, 111, 0.3333333333);
 }
 
 @media (max-width: 600px) {

@@ -64,6 +64,7 @@ body
                     text-shadow: 0 0 10px #00000022
         .tabs
             font-size: 0
+            margin-top: 20px
             button
                 font-size: 16px
                 padding: 0 15px
@@ -79,7 +80,7 @@ body
                     opacity: 1
                 &.activeBtn
                     opacity: 1
-                    background:#6f966f55
+                    background: #6f966f55
         .tabcontent
             display: none
             h3
@@ -91,6 +92,20 @@ body
                 display: block
                 margin-top: 10px
                 margin-bottom: 20px
+            .tabContentImages
+                font-size: 0
+                // display: flex
+                // flex-wrap: wrap
+                // justify-content: center
+                text-align: center
+                img
+                    display: inline-block
+                    margin: 10px
+                    border-radius: 10px
+                    box-shadow: 0 10px 20px rgba(111, 150, 111, 0.3333333333)
+                    &:last-child
+                        max-width: none
+                        width: 50%
         .hero
             overflow: hidden
             .mainImage
@@ -101,16 +116,37 @@ body
                 margin: auto
                 margin-top: 35px
                 margin-bottom: 40px
+                border-radius: 10px
+                box-shadow: 0 10px 20px rgba(111, 150, 111, 0.3333333333)
             p
                 // max-width: 400px
                 margin: auto
                 margin-bottom: 40px
+
+// 1950
+.floating
+    // overflow: hidden
+    float: right
+    display: inline-block
+    margin: 20px
+    text-align: center
+    figcaption
+        color: #777
+    .floatingImg
+        margin-bottom: 10px
+        max-width: 600px
+        width: 100%
+        border-radius: 10px
+        box-shadow: 0 10px 20px rgba(111, 150, 111, 0.3333333333)
+
+// 1950
+
 @media (max-width: 600px)
     body
         header
             margin-bottom: 10px
         main
-            .cards  
+            .cards
                 a
                     width: 100%
                     margin: 0
