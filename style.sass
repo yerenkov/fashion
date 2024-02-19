@@ -15,6 +15,9 @@ body
     header
         margin-bottom: 5px
         background: #6f966f
+        .container
+            display: flex
+            justify-content: center
         a
             display: block
             padding: 40px
@@ -23,6 +26,18 @@ body
             font-weight: normal
             color: #fff
             text-align: center
+        .arrow
+            background-image: url("arrow.svg")
+            background-repeat: no-repeat
+            background-position: center
+            background-size: contain
+            opacity: 0.5
+            filter: invert(100%)
+            padding: 30px
+            &:first-child
+                transform: scaleX(-1)
+            &:hover
+                opacity: 1
     main
         h2
             text-align: center

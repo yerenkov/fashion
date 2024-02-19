@@ -22,6 +22,10 @@ body header {
   margin-bottom: 5px;
   background: #6f966f;
 }
+body header .container {
+  display: flex;
+  justify-content: center;
+}
 body header a {
   display: block;
   padding: 40px;
@@ -30,6 +34,21 @@ body header a {
   font-weight: normal;
   color: #fff;
   text-align: center;
+}
+body header .arrow {
+  background-image: url("arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.5;
+  filter: invert(100%);
+  padding: 30px;
+}
+body header .arrow:first-child {
+  transform: scaleX(-1);
+}
+body header .arrow:hover {
+  opacity: 1;
 }
 body main h2 {
   text-align: center;
