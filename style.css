@@ -50,6 +50,10 @@ body header .arrow:first-child {
 body header .arrow:hover {
   opacity: 1;
 }
+body main iframe {
+  width: 100%;
+  margin-bottom: 50px;
+}
 body main h2 {
   text-align: center;
   line-height: 40px;
