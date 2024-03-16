@@ -157,6 +157,21 @@ body main .tabcontent .tabContentImages img {
   width: calc(100% - 20px);
   max-width: 350px;
 }
+body main .hero #audio {
+  display: none;
+}
+body main .hero #radio {
+  position: absolute;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  height: 105px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body main .hero #radio:hover {
+  filter: brightness(110%) drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
+}
 body main .hero .mainImage {
   max-width: 400px;
   height: 300px;
@@ -218,6 +233,16 @@ body main .about h3 {
 @media (max-width: 600px) {
   body header {
     margin-bottom: 10px;
+  }
+  body main .hero #radio {
+    position: absolute;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    height: 105px;
+    top: auto;
+    cursor: pointer;
+    transition: 0.3s;
   }
   body main .cards a {
     width: 100%;

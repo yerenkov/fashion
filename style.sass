@@ -135,6 +135,19 @@ body
                     //     max-width: 500px
                         // width: 100%
         .hero
+            // position: relative
+            #audio
+                display: none
+            #radio
+                position: absolute
+                position: fixed
+                right: 15px
+                top: 15px
+                height: 105px
+                cursor: pointer
+                transition: 0.3s
+                &:hover
+                    filter: brightness(110%) drop-shadow(0 0 20px #ffffff33)
             // overflow: hidden
             .mainImage
                 max-width: 400px
@@ -197,6 +210,16 @@ body
         header
             margin-bottom: 10px
         main
+            .hero
+                #radio
+                    position: absolute
+                    position: fixed
+                    right: 15px
+                    bottom: 15px
+                    height: 105px
+                    top: auto
+                    cursor: pointer
+                    transition: 0.3s
             .cards
                 a
                     width: 100%

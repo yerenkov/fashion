@@ -7,7 +7,7 @@
     <title>История моды СССР и России</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .samoposhiv .floating{
+        .samoposhiv .floating {
             float: none;
             text-align: center;
             display: block;
@@ -19,7 +19,7 @@
     <header>
         <div class="container">
             <a href="index.html" class="arrow"></a>
-            <a href="index.html">1950-е</a>
+            <a href="index.html" id="year">1950-е</a>
             <a href="1960.html" class="arrow"></a>
         </div>
     </header>
@@ -27,6 +27,11 @@
     <main>
         <div class="container">
             <div class="hero">
+                <img src="radio0.png" alt="" id="radio">
+                <audio controls id="audio">
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
                 <img src="1950/2023-11-12 23.30.21.jpg" alt="" class="mainImage">
                 <div>На рубеже 1940‑х и 1950‑х место моды в жизни советских граждан меняется. Трудные годы позади,
                     впереди
@@ -215,7 +220,6 @@
             counter = (counter + 1) % imgs.length
             document.getElementsByClassName("mainImage")[0].src = imgs[counter]
         }, 5000)
-
     </script>
     <script src="script.js"></script>
 </body>
