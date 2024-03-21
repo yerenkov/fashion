@@ -157,6 +157,9 @@ body main .tabcontent .tabContentImages img {
   width: calc(100% - 20px);
   max-width: 350px;
 }
+body main .hero #audio {
+  display: none;
+}
 body main .hero #radio {
   position: absolute;
   position: fixed;
